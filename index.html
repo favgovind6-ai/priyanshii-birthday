@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffb4d5">
+<meta name="description" content="A little birthday world made with love for Priyanshii, from Govind.">
+<title>Happy Birthday, myy Priyanshii 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--pink:#ff6fae;--deep:#7d2858;--cream:#fff8fc;--ink:#572746;--soft:#ffe2ef}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:linear-gradient(155deg,#ffe7f2,#ffc3dc 45%,#f8d9ff);overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+.heart{position:absolute;bottom:-35px;color:#ff4d98;opacity:.7;animation:floatUp linear forwards;text-shadow:0 3px 12px #ff8bbd}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.wrap{width:min(920px,100%);margin:auto;padding:18px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 2px;gap:10px}
+.logo{font-family:'Playfair Display',serif;font-weight:700;color:#9e326a}
+.pill{border:1px solid #ffffffb5;background:#ffffff8c;padding:10px 15px;border-radius:999px;color:var(--deep);font-weight:700}
+.hero{min-height:86vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:38px 20px;position:relative;border:1px solid #ffffffad;border-radius:30px;background:radial-gradient(circle at 50% 20%,#fff9 0 7%,transparent 36%),linear-gradient(150deg,#f99fc8e8,#d96ea7e8 52%,#702e67);color:white;box-shadow:0 22px 60px #a73b6c2b;overflow:hidden}
+.hero:before,.hero:after{content:'✿';position:absolute;font-size:clamp(100px,24vw,210px);color:#ffffff20}
+.hero:before{left:-35px;bottom:-42px}.hero:after{right:-35px;top:-38px}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:.76rem;font-weight:700;opacity:.9}
+h1,h2,h3{font-family:'Playfair Display',serif}
+h1{font-size:clamp(2.7rem,10vw,5.5rem);line-height:1.02;margin:20px 0 14px;position:relative}
+h1 em{display:block;font-weight:500}
+.hero p{max-width:470px;font-size:1.05rem;line-height:1.75}
+.from{margin-top:22px;font-weight:700}
+.primary{background:white;color:#b53775;border:0;border-radius:999px;padding:14px 22px;font-weight:700;box-shadow:0 8px 22px #65244e33;transition:transform .2s}
+.primary:hover{transform:translateY(-2px) scale(1.02)}
+.scroll{margin-top:36px;font-size:.85rem;opacity:.85}
+section{margin:22px 0;padding:clamp(22px,5vw,42px);border:1px solid #ffffffc7;border-radius:26px;background:#fff9fdf0;box-shadow:0 15px 45px #a83e6d14}
+.section-head{text-align:center;margin-bottom:24px}
+.section-head .tiny{font-size:1.3rem}
+h2{font-size:clamp(1.9rem,6vw,3rem);margin:7px 0;color:#a5346d}
+.section-head p{margin:0;color:#9b6481}
+.letter{max-width:650px;margin:auto;font-family:'Playfair Display',serif;font-size:1.12rem;line-height:1.9;white-space:pre-line}
+.signature{font-family:'Playfair Display',serif;font-style:italic;font-size:1.35rem;text-align:right;margin-top:18px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.memory{min-height:155px;border-radius:18px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;position:relative;color:white;background:linear-gradient(145deg,#ff9cc7,#a54b91);isolation:isolate}
+.memory:nth-child(2){background:linear-gradient(145deg,#e6b3ff,#8a5da9)}
+.memory:nth-child(3){background:linear-gradient(145deg,#ffb5a7,#cb5c85)}
+.memory:nth-child(4){background:linear-gradient(145deg,#ffc4df,#b85893)}
+.memory:before{content:attr(data-emoji);position:absolute;inset:0;display:grid;place-items:center;font-size:4.4rem;opacity:.7;z-index:-1}
+.memory strong{font-family:'Playfair Display',serif;font-size:1.12rem}
+.memory small{opacity:.9;margin-top:4px}
+.hint{text-align:center;font-size:.84rem;color:#9b6481;margin-top:14px}
+.surprise-box{text-align:center;padding:10px}
+.gift{font-size:5rem;display:inline-block;filter:drop-shadow(0 8px 10px #d64e8c35);animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}
+.hidden-message{display:none;max-width:560px;margin:22px auto 0;padding:22px;border-radius:20px;background:#ffe6f1;border:1px dashed #ed83b3;line-height:1.8;animation:pop .5s ease both}
+.hidden-message.show{display:block}
+@keyframes pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+.music-card{display:flex;align-items:center;gap:16px;max-width:450px;margin:auto;padding:16px;border-radius:22px;background:linear-gradient(120deg,#ffe3ef,#f4dfff)}
+.disc{width:70px;height:70px;border-radius:50%;flex-shrink:0;background:radial-gradient(circle,#fff 0 8%,#ff75ae 9% 24%,#8e477e 25% 58%,#2d1830 59%);display:grid;place-items:center;color:white;font-size:1.2rem}
+.disc.playing{animation:spin 4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.music-info{flex:1;min-width:0}.music-info strong{display:block}.music-info small{color:#a06684}
+footer{text-align:center;padding:32px 10px 44px;color:#93456f}
+footer .big-heart{font-size:2rem}
+.confetti{position:fixed;top:-20px;width:8px;height:13px;z-index:20;pointer-events:none;animation:fall 2.6s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(min-width:680px){.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}.memory{min-height:210px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+<div class="wrap">
+<nav><div class="logo">♡ a little love note</div><button class="pill" id="heartToggle" aria-label="Toggle floating hearts">♡ Hearts: on</button></nav>
+<header class="hero">
+<div class="eyebrow">A tiny website, a huge amount of love</div>
+<h1>Happy Birthday <em>myy Priyanshii</em> ♡</h1>
+<p>Today the world gets to celebrate someone who makes it feel a little softer, brighter, and more beautiful.</p>
+<div class="from">Made with love by Govind ♡</div>
+<button class="primary" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})" style="margin-top:25px">Open your birthday letter ↓</button>
+<div class="scroll">Keep scrolling for your little surprises ✨</div>
+</header>
+
+<section id="letter">
+<div class="section-head"><div class="tiny">💌</div><h2>A letter for you</h2><p>Some things deserve more than a text message.</p></div>
+<div class="letter">My dearest Priyanshii,
+
+Happy birthday, myy love. ♡
+
+I hope today reminds you of how special you are—not just today, but on all the ordinary days too. Your smile, your little ways, and the person you are make life feel warmer. I'm grateful that I get to know you and make memories with you.
+
+I can't promise that every day will be perfect, but I can promise to keep cheering for you, listening to you, and wishing the very best for you. May this new year of your life bring you peace, laughter, beautiful surprises, and countless reasons to smile.
+
+Whenever life feels a little heavy, I hope you remember how loved, valued, and capable you are. Keep being your lovely self, and never stop dreaming big.
+
+Today is your day. Make a wish, smile a little extra, and let yourself feel celebrated. You deserve so much happiness.
+
+Happy birthday once again, myy Priyanshii. May your world always have a little magic in it. ♡</div>
+<div class="signature">Always cheering for you,<br>Govind ♡</div>
+</section>
+
+<section id="memories">
+<div class="section-head"><div class="tiny">📸</div><h2>Little moments, big feelings</h2><p>A few little reminders of the things worth keeping close.</p></div>
+<div class="gallery">
+<div class="memory" data-emoji="🌅"><strong>Golden moments</strong><small>Little things that stay with us</small></div>
+<div class="memory" data-emoji="🌷"><strong>Your kind of magic</strong><small>Softness in a busy world</small></div>
+<div class="memory" data-emoji="🎀"><strong>Our silly smiles</strong><small>The memories that make me grin</small></div>
+<div class="memory" data-emoji="🌙"><strong>More to come</strong><small>So many chapters ahead</small></div>
+</div>
+<p class="hint">Tip: To add your own photos, replace each coloured memory card in the code with an image of your choice.</p>
+</section>
+
+<section id="surprise">
+<div class="section-head"><div class="tiny">🎁</div><h2>One last little surprise</h2><p>There's something here just for you.</p></div>
+<div class="surprise-box">
+<div class="gift" id="gift">🎁</div><br>
+<button class="primary" id="revealBtn">Open your surprise 💗</button>
+<div class="hidden-message" id="secret">
+<h3 style="font-size:1.7rem;margin-top:0">For myy Priyanshii ♡</h3>
+You are not just part of my days—you make the little moments feel meaningful. I hope this year brings you closer to every dream you hold, surrounds you with kindness, and gives you reasons to be proud of yourself. Whatever new adventures come your way, I hope you meet them with that beautiful spark that makes you, you.<br><br>
+<strong>Happy birthday, my favourite person to celebrate. 💖</strong><br><br>
+<button class="primary" id="confettiBtn">Make a wish ✨</button>
+</div>
+</div>
+</section>
+
+<section id="music">
+<div class="section-head"><div class="tiny">🎵</div><h2>A little birthday soundtrack</h2><p>Press play for a gentle birthday tune.</p></div>
+<div class="music-card">
+<div class="disc" id="disc">♫</div>
+<div class="music-info"><strong>Birthday daydream</strong><small>A tiny melody, just for this moment</small></div>
+<button class="pill" id="musicBtn">▶ Play</button>
+</div>
+<p class="hint">This plays a simple built-in melody—no song download needed.</p>
+</section>
+<footer><div class="big-heart">♡</div><p>Made with a full heart, just for you.</p><strong>Happy Birthday, myy Priyanshii</strong><br><small>— Govind</small></footer>
+</div>
+<script>
+const heartsLayer=document.getElementById('hearts');
+let heartsOn=true;
+function makeHeart(){
+ if(!heartsOn)return;
+ const el=document.createElement('span');el.className='heart';el.textContent=['♡','♥','✧','💕'][Math.floor(Math.random()*4)];
+ el.style.left=Math.random()*100+'vw';el.style.fontSize=(14+Math.random()*18)+'px';el.style.animationDuration=(6+Math.random()*6)+'s';
+ heartsLayer.appendChild(el);setTimeout(()=>el.remove(),12500);
+}
+let heartTimer=setInterval(makeHeart,650);
+document.getElementById('heartToggle').addEventListener('click',()=>{
+ heartsOn=!heartsOn;document.getElementById('heartToggle').textContent=heartsOn?'♡ Hearts: on':'♡ Hearts: off';
+ if(!heartsOn)heartsLayer.innerHTML='';
+});
+document.getElementById('revealBtn').addEventListener('click',()=>{
+ document.getElementById('secret').classList.toggle('show');
+ const open=document.getElementById('secret').classList.contains('show');
+ document.getElementById('revealBtn').textContent=open?'Close surprise ♡':'Open your surprise 💗';
+ document.getElementById('gift').textContent=open?'💝':'🎁';
+ if(open)burstConfetti(90);
+});
+function burstConfetti(amount=70){
+ const colors=['#ff5eaa','#ffc857','#b78cff','#ff8c9f','#ffffff','#f26fa8'];
+ for(let i=0;i<amount;i++){
+  const p=document.createElement('i');p.className='confetti';p.style.left=Math.random()*100+'vw';p.style.background=colors[Math.floor(Math.random()*colors.length)];
+  p.style.animationDelay=(Math.random()*.5)+'s';p.style.transform=`rotate(${Math.random()*360}deg)`;document.body.appendChild(p);setTimeout(()=>p.remove(),3400);
+ }
+}
+document.getElementById('confettiBtn').addEventListener('click',()=>{burstConfetti(150);});
+/* Small original melody generated in-browser with Web Audio. Starts only after a tap. */
+let audioCtx=null,playing=false,melodyTimer=null,noteIndex=0;
+const notes=[523.25,659.25,783.99,659.25,698.46,783.99,880,783.99,659.25,587.33,523.25,587.33,659.25,523.25];
+function playNote(){
+ if(!playing||!audioCtx)return;
+ const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
+ osc.type='sine';osc.frequency.value=notes[noteIndex%notes.length];gain.gain.setValueAtTime(.0001,audioCtx.currentTime);
+ gain.gain.exponentialRampToValueAtTime(.10,audioCtx.currentTime+.03);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.38);
+ osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.4);noteIndex++;
+}
+document.getElementById('musicBtn').addEventListener('click',async()=>{
+ const btn=document.getElementById('musicBtn'),disc=document.getElementById('disc');
+ if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+ if(audioCtx.state==='suspended')await audioCtx.resume();
+ playing=!playing;
+ if(playing){playNote();melodyTimer=setInterval(playNote,430);btn.textContent='Ⅱ Pause';disc.classList.add('playing');}
+ else{clearInterval(melodyTimer);btn.textContent='▶ Play';disc.classList.remove('playing');}
+});
+</script>
+</body>
+</html>
